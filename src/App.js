@@ -1,7 +1,9 @@
+import { LoginForm } from "./components/forms/LoginForm";
+
 function App() {
   return (
     <main className="App">
-      Login Register Logout Forms
+      <LoginForm />
     </main>
   );
 }

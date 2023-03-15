@@ -1,16 +1,8 @@
-import logo from './logo.svg';
-import './App.css';
-
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Login Register Logout Forms
-        </p>
-      </header>
-    </div>
+    <main className="App">
+      Login Register Logout Forms
+    </main>
   );
 }
 

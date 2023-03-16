@@ -1,5 +1,6 @@
 import React, { useRef, useState, useEffect, useContext } from "react";
 import AuthContext from "../../context/AuthProvider";
+import "./VanillaLoginForm.css";
 
 export const LoginForm = () => {
     const {auth, setAuth } = useContext(AuthContext);
@@ -28,7 +29,8 @@ export const LoginForm = () => {
     }
 
     return (
-        <>
+        <div className="login-container">
+            <h2 className="login-container__title">User login</h2>
             {
                 success ? (
                     <section>
@@ -37,13 +39,12 @@ export const LoginForm = () => {
                         <h3>I hope you are doing well and are safe.</h3>
                     </section>
                 ) : (
-                    <section>
-                        <form onSubmit={handleSubmit}>
-                            <p ref={errRef} arial-live="assertive">
+                    <section className="login-form-wrapper">
+                        <form onSubmit={handleSubmit} className="login-form">
+                            <p ref={errRef} arial-live="assertive" className="login-form__err-msg">
                                 {errMsg}
                             </p>
 
-                            <label htmlFor="username">Username:</label>
                             <input
                                 type="text"
                                 id="username"
@@ -52,24 +53,27 @@ export const LoginForm = () => {
                                 onChange={(e) => setUsername(e.target.value)}
                                 value={username}
                                 required
+                                placeholder="Username"
+                                className="login-form__input"
                             />
                             
-                            <label htmlFor="password">Password:</label>
                             <input 
                                 type="password"
                                 id="password"
                                 onChange={(e) => setPassword(e.target.value)}
                                 value={password}
                                 required
+                                placeholder="Password"
+                                className="login-form__input"
                             />
 
-                            <button>Login</button>
+                            <button className="login-form__button">Login</button>
                         </form>
                         <p>Don't have an account? Register <a href="#">here</a></p>
                     </section>
                 )
             }   
-        </>
+        </div>
     )
 }
 

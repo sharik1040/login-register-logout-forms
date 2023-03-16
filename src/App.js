@@ -1,9 +1,9 @@
-import { LoginForm } from "./components/VanillaLoginForm";
+import { VanillaLoginFormExample } from "./components/VanillaLoginForm/VanillaLoginFormExample";
 
 function App() {
   return (
     <main className="App">
-      <LoginForm />
+      <VanillaLoginFormExample />
     </main>
   );
 }

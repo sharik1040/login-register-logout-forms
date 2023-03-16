@@ -2,7 +2,7 @@ import React, { useRef, useState, useEffect, useContext } from "react";
 import AuthContext from "../../context/AuthProvider";
 import { Button, Box, Typography, TextField, Divider } from '@mui/material';
 import { materialUIForm } from "./MaterialUIForm.style";
-
+//console.log(test);
 export const MaterialUIForm = () => {
     const {auth, setAuth } = useContext(AuthContext);
     const userRef = useRef();

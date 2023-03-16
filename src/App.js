@@ -1,9 +1,11 @@
-import { VanillaLoginFormExample } from "./components/VanillaLoginForm/VanillaLoginFormExample";
+import { MaterialUIFormExample } from "./components/MaterialUIForm/MaterialUIFormExample";
+// import { VanillaLoginFormExample } from "./components/VanillaLoginForm/VanillaLoginFormExample";
 
 function App() {
   return (
     <main className="App">
-      <VanillaLoginFormExample />
+      <MaterialUIFormExample />
+      {/* <VanillaLoginFormExample /> */}
     </main>
   );
 }

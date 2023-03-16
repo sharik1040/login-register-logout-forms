@@ -1,5 +1,5 @@
 import React, { useRef, useState, useEffect, useContext } from "react";
-import AuthContext from "../../../context/AuthProvider";
+import AuthContext from "../../context/AuthProvider";
 
 export const LoginForm = () => {
     const {auth, setAuth } = useContext(AuthContext);

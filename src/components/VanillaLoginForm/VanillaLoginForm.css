@@ -1,0 +1,89 @@
+.login-container{
+    position: relative;
+    z-index: 200;
+    color: white;
+    width: 100%;
+    max-width:30%;
+}
+
+@media screen and (max-width: 700px) {
+    .login-container{
+        max-width:70%;
+    }
+}
+
+
+.login-container__title{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.login-form-wrapper{
+    position: relative;
+}
+
+.login-form{
+    display: flex;
+    flex-direction: column;
+}
+
+.login-form__input{
+    margin: 0.5rem 0;
+    padding: 1.2rem;
+    border: 2px solid #0B2D2F;
+    border-radius: 50px;
+    background-color: rgba(7,40,45, 0.8);
+    font-size: 1rem;
+    offset: 1;
+    color: #ffffff;
+}
+
+.login-form__button{
+    margin: 0.5rem 0;
+    padding: 1.2rem;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.login-form__err-msg{
+    color: red;
+}
+
+/* styles for VanillaLoginFormExample.js */
+.form-usage{
+    background-color: #07282D;
+    text-align: center;
+    display: flex;
+    min-height: 100vh;
+    max-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    /* position: relative; */
+}
+
+@media screen and (max-width: 600px) {
+    .form-usage{
+      padding: 0rem;
+    }
+}
+
+.decor-wrapper{
+    overflow: hidden;
+}
+
+.form-usage__decor{
+    width: 0; 
+    height: 0; 
+    border-top: 100vh solid transparent;
+    border-bottom: 0; 
+    border-right: 150vh solid  #03212C; 
+    border-left: 0;
+    z-index: 10;
+    position: absolute;
+    top: 0;
+    right: 0;
+}

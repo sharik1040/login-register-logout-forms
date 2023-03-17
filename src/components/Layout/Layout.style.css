@@ -1,0 +1,37 @@
+.form-usage{
+    background-color: #07282D;
+    text-align: center;
+    display: flex;
+    min-height: 100vh;
+    max-height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 600px) {
+    .form-usage{
+      padding: 0rem;
+    }
+}
+
+.decor-wrapper{
+    overflow: hidden;
+}
+
+.form-usage__decor{
+    width: 0; 
+    height: 0; 
+    border-top: 100vh solid transparent;
+    border-bottom: 0; 
+    border-right: 150vh solid  #03212C; 
+    border-left: 0;
+    z-index: 10;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.homepage{
+    position: relative;
+    z-index: 1000;
+}

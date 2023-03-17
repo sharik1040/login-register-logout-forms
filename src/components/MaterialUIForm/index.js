@@ -36,6 +36,9 @@ export const MaterialUIForm = () => {
             alignItems="center"
             flexDirection="column"
             minHeight="100vh"
+            sx={{
+                ...materialUIForm.loginContainer
+            }}
         >
             <Box>
                 <Typography variant="h3" className="login-container__title">User login</Typography>

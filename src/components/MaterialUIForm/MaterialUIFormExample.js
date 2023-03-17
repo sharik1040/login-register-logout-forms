@@ -5,9 +5,7 @@ import theme from './theme';
 export const MaterialUIFormExample = () => {
     return (
         <ThemeProvider theme={theme}>
-            <section className="form-usage">
-                <MaterialUIForm />
-            </section>
+            <MaterialUIForm />
         </ThemeProvider>
     )
 }

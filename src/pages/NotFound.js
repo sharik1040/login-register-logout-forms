@@ -1,6 +1,6 @@
 export const NotFound = () => {
     return (
-        <div>
+        <div className="text">
             Sorry, page not found
         </div>
     )

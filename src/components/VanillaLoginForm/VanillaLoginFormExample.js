@@ -3,11 +3,8 @@ import "./VanillaLoginForm.css";
 
 export const VanillaLoginFormExample = () => {
     return (
-        <section className="form-usage">
+        <section>
             <LoginForm />
-            <div className="decor-wrapper">
-                <div className="form-usage__decor"/>
-            </div>
         </section>
     )
 }
